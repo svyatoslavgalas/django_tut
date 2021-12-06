@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+    <h1>{{ post }}</h1>
+
+    <p>
+        {{ post.content }}
+    </p>
+
+    <em>{{ post.date_created }}</em><br>
+
+    <a href="{% url 'news:list' %}">Назад</a>
+    <hr>
+
+
+</body>
+</html>

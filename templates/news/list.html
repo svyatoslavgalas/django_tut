@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    {% for post in posts %}
+
+        <h1>{{ post }}</h1>
+
+        <p>
+            {{ post.content }}
+        </p>
+
+        <em>{{ post.date_created }}</em><br>
+
+        <a href="{% url 'news:detail' post.id %}">Читать далее</a>
+        <hr>
+    {% endfor %}
+
+
+</body>
+</html>
